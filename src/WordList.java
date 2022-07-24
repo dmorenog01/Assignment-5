@@ -17,20 +17,6 @@ public class WordList {
 		this.next = null;
 	}
 	
-//	public void addMeaningToWord(String word, String meaning) {
-//		while (this.next != null) {
-//			if (this.word.equals(word)){
-//				this.word_meanings.addMeaning(new WordMeaning(word, meaning));
-//				return;
-//			}
-//		}
-//		
-//		WordList temp = new WordList(word);
-//		temp.word_meanings.addMeaning(new WordMeaning(word, meaning));
-//		temp.next = this.next;
-//		this.next = temp;
-//		return;
-//	}
 	static void addMeaningToWord(WordList head, String word, String meaning) {
 		while (head.next != null) {
 			head = head.next;
